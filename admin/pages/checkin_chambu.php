@@ -6,7 +6,7 @@ $datetime = new DateTime();
 $curtime = $datetime->format('H:i:s');
 
 // Kết nối tới cơ sở dữ liệu
-$conn = mysqli_connect('db-mysql-nyc3-95634-do-user-18598910-0.i.db.ondigitalocean.com', 'doadmin ', "AVNS_ng7n4COe0AhJXEnSBsS", 'quanlychamcong');
+$conn = mysqli_connect('db-mysql-nyc3-95634-do-user-18598910-0.i.db.ondigitalocean.com', 'doadmin', "AVNS_ng7n4COe0AhJXEnSBsS", 'quanlychamcong');
 
 // Lấy giờ bắt đầu của ca làm việc
 $sql_ca = "SELECT Gio_bat_dau FROM cham_bu WHERE Ma_nv = '$manv' AND Ngay_cham_bu = CURDATE() LIMIT 1";

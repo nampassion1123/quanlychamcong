@@ -2,7 +2,7 @@
 // $manv = $_GET['Ma_nv'];
 // $date = $_GET['Ngay'];
 $today = date("Y/m/d");
-$conn =mysqli_connect('db-mysql-nyc3-95634-do-user-18598910-0.i.db.ondigitalocean.com', 'doadmin ', "AVNS_ng7n4COe0AhJXEnSBsS", 'quanlychamcong')or die("Kết nối database không thành công");
+$conn =mysqli_connect('db-mysql-nyc3-95634-do-user-18598910-0.i.db.ondigitalocean.com', 'doadmin', "AVNS_ng7n4COe0AhJXEnSBsS", 'quanlychamcong')or die("Kết nối database không thành công");
 $sql = " select * from cham_cong where Ngay='$today'";
 $result = mysqli_query($conn, $sql);
 $count = mysqli_num_rows($result);

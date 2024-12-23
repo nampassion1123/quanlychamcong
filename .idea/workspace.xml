@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="54c5af86-68f2-4436-837c-dd314a9022a7" name="Changes" comment="3">
+    <list default="true" id="54c5af86-68f2-4436-837c-dd314a9022a7" name="Changes" comment="4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/pages/bang.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/bang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/pages/bieudo.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/bieudo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/pages/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/pages/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/pages/otp.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/otp.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/pages/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/search.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,12 +54,12 @@
       </RecentBranches>
     </option>
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/nampassion1123/quanlychamcong.git",
-    "accountId": "2f728427-197a-4375-a38d-66e6663a522b"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/nampassion1123/quanlychamcong.git&quot;,
+    &quot;accountId&quot;: &quot;2f728427-197a-4375-a38d-66e6663a522b&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -123,7 +117,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734917536288</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="4">
+      <option name="closed" value="true" />
+      <created>1734920554730</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1734920554730</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,6 +154,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="a" />
     <MESSAGE value="3" />
-    <option name="LAST_COMMIT_MESSAGE" value="3" />
+    <MESSAGE value="4" />
+    <option name="LAST_COMMIT_MESSAGE" value="4" />
   </component>
 </project>

@@ -5,7 +5,7 @@ $today = date("Y/m/d");
 $datetime = new DateTime();
 $curtime = $datetime->format('H:i:s');
 // var_dump($manv,$curtime);
-$conn = mysqli_connect('db-mysql-nyc3-95634-do-user-18598910-0.i.db.ondigitalocean.com', 'doadmin ', "AVNS_ng7n4COe0AhJXEnSBsS", 'quanlychamcong');
+$conn = mysqli_connect('db-mysql-nyc3-95634-do-user-18598910-0.i.db.ondigitalocean.com', 'doadmin', "AVNS_ng7n4COe0AhJXEnSBsS", 'quanlychamcong');
 $nv_ca = $conn->query("SELECT clv.*
 FROM phan_ca_lam pcl
 JOIN ca_lam_viec clv ON pcl.id_calam = clv.ID
