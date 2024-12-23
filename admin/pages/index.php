@@ -5,7 +5,6 @@ use PHPMailer\PHPMailer\Exception;
 
 // Tải autoload.php
 require_once '../../vendor/autoload.php';
-require_once '../../src/function.php'; // Include function.php
 ?>
 
 
