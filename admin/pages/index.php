@@ -13,6 +13,8 @@ require_once '../../vendor/autoload.php';
 <html lang="en">
 
 <head>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+
     <meta charset="UTF-8">
     <title>Login Admin</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">

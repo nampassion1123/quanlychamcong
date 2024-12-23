@@ -11,9 +11,10 @@ if (!isset($_SESSION['username'])) {
 <html>
 
 <head>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
     <title>Quản lý chấm công</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -51,38 +52,7 @@ if (!isset($_SESSION['username'])) {
     <link href='https://unpkg.com/@fullcalendar/common@latest/main.css' rel='stylesheet' />
     <link href='https://unpkg.com/@fullcalendar/daygrid@latest/main.css' rel='stylesheet' />
     <link href='https://unpkg.com/@fullcalendar/timegrid@latest/main.css' rel='stylesheet' />
-    <script>
-    // // Hàm khởi tạo đồng hồ
-    // function startTime() {
-    //     // Lấy Object ngày hiện tại
-    //     var today = new Date();
 
-    //     // Giờ, phút, giây hiện tại
-    //     var h = today.getHours();
-    //     var m = today.getMinutes();
-    //     var s = today.getSeconds();
-
-    //     // Chuyển đổi sang dạng 01, 02, 03
-    //     m = checkTime(m);
-    //     s = checkTime(s);
-
-    //     // Ghi ra trình duyệt
-    //     document.getElementById('timer').innerHTML = h + ":" + m + ":" + s;
-
-    //     // Dùng hàm setTimeout để thiết lập gọi lại 0.5 giây / lần
-    //     var t = setTimeout(function() {
-    //         startTime();
-    //     }, 500);
-    // }
-
-    // // Hàm này có tác dụng chuyển những số bé hơn 10 thành dạng 01, 02, 03, ...
-    // function checkTime(i) {
-    //     if (i < 10) {
-    //         i = "0" + i;
-    //     }
-    //     return i;
-    // }
-    // </script>
 
     <style>
     #logout-link:hover {

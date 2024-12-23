@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+
 <title>Tạo biểu đồ sử dụng PHP và Chart.js</title>
 <style type="text/css">
 BODY {
