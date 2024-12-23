@@ -5,6 +5,7 @@ use PHPMailer\PHPMailer\Exception;
 
 // Tải autoload.php
 require_once '../../vendor/autoload.php';
+require_once '../../src/function.php'; // Include function.php
 ?>
 
 
@@ -14,7 +15,7 @@ require_once '../../vendor/autoload.php';
 
 <head>
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-
+    
     <meta charset="UTF-8">
     <title>Login Admin</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
@@ -22,7 +23,7 @@ require_once '../../vendor/autoload.php';
 
     <link rel="stylesheet" href="../Public/admin/dist/css/style_login.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
+    
 
 </head>
 
@@ -138,10 +139,10 @@ require_once '../../vendor/autoload.php';
             <a href="dangky.php"><i class="glyphicon glyphicon-minus"></i>Signup</a>
         </div> -->
         <?php
+        require_once "../src/db.php";
         if (isset($_POST['btn'])) {
             $user = $_POST['user'];
             $pass = $_POST['pass'];
-            $conn = mysqli_connect('db-mysql-nyc3-95634-do-user-18598910-0.i.db.ondigitalocean.com', 'doadmin', "AVNS_ng7n4COe0AhJXEnSBsS", 'quanlychamcong');
             $sql = " select * from users where username='$user'";
             $sql1 = " select * from nhan_vien where username='$user'";
             $sql2 = " select * from users where username='$user' and role=2";
@@ -213,7 +214,7 @@ require_once '../../vendor/autoload.php';
                     echo '<script>alert("Tài khoản của bạn đã bị khóa")</script>';
                     echo "<script> window.location = 'index.php';</script>";
                 }else {
-                    echo '<script>alert("Sai mật khẩu")</script>';
+                    echo '<script>alert("Sai m���t khẩu")</script>';
                     echo "<script> window.location = 'index.php';</script>";
                 }
 
