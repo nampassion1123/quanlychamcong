@@ -213,7 +213,7 @@ require_once '../../vendor/autoload.php';
                     echo '<script>alert("Tài khoản của bạn đã bị khóa")</script>';
                     echo "<script> window.location = 'index.php';</script>";
                 }else {
-                    echo '<script>alert("Sai m���t khẩu")</script>';
+                    echo '<script>alert("Sai mật khẩu")</script>';
                     echo "<script> window.location = 'index.php';</script>";
                 }
 
@@ -228,7 +228,7 @@ require_once '../../vendor/autoload.php';
 
 </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js'></script>
-    <script src='http://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js?r=182'></script>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js?r=182'></script>
     <script src="../Public/admin/dist/js/login_check.js"></script>
 </body>
 

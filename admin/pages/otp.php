@@ -1,4 +1,6 @@
 <?php
+require_once "../src/db.php";
+
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -9,8 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         
         // Chuyển hướng đến trang home.php
         $user = $_SESSION['Ma_nv'];
-		$conn = mysqli_connect('db-mysql-nyc3-95634-do-user-18598910-0.i.db.ondigitalocean.com', 'doadmin', "AVNS_ng7n4COe0AhJXEnSBsS", 'quanlychamcong');
-        $sql = " UPDATE nhan_vien SET login = 1 WHERE Ma_nv='$user'";
+         $sql = " UPDATE nhan_vien SET login = 1 WHERE Ma_nv='$user'";
         $result = mysqli_query($conn, $sql);
         if($result){
             unset($_SESSION['otp']);

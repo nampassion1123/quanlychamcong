@@ -44,8 +44,9 @@ $ca_lam_viec = $conn->query("SELECT * FROM ca_lam_viec"); ?>
                                 </thead>
                                 <tbody>
                                     <?php
-		$conn = mysqli_connect('db-mysql-nyc3-95634-do-user-18598910-0.i.db.ondigitalocean.com', 'doadmin', "AVNS_ng7n4COe0AhJXEnSBsS", 'quanlychamcong');
-        $sql = " select * from nghi_viec";
+                                    require_once "../src/db.php";
+
+		 $sql = " select * from nghi_viec";
                                     $result = mysqli_query($conn, "SELECT nghi_viec.*,nhan_vien.Hoten AS ten_nhan_vien FROM nghi_viec JOIN nhan_vien ON nghi_viec.Ma_nv = nhan_vien.Ma_nv;") or die("Câu lệnh truy vấn sai");
                                     while ($row = mysqli_fetch_assoc($result)) {
                                     ?>

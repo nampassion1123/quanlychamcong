@@ -56,8 +56,8 @@ $ca_lam_viec = $conn->query("SELECT * FROM ca_lam_viec"); ?>
                                 </thead>
                                 <tbody>
                                     <?php
-                                    //Kết nối máy chủ MySQL.
-                                    $conn = mysqli_connect('db-mysql-nyc3-95634-do-user-18598910-0.i.db.ondigitalocean.com', 'doadmin', "AVNS_ng7n4COe0AhJXEnSBsS", 'quanlychamcong');
+                                    require_once "../src/db.php";
+
                                     $date = '%';
                                     if (isset($_POST['date'])) {
                                         $date = '%' . $_POST['date'] . '%';

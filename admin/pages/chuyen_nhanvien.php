@@ -1,6 +1,5 @@
 <?php
 require_once "../src/db.php";
-$conn = mysqli_connect('db-mysql-nyc3-95634-do-user-18598910-0.i.db.ondigitalocean.com', 'doadmin', "AVNS_ng7n4COe0AhJXEnSBsS", 'quanlychamcong');
 
 if (isset($_POST['nhanvien']) && isset($_POST['phongban'])) {
     $nhanVienIds = json_decode($_POST['nhanvien']);
