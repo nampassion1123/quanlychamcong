@@ -51095,8 +51095,8 @@ module.exports = function shimFlags() {
   // XML allows all manner of ridiculous numbers and digits.
   var CDATA = '[CDATA['
   var DOCTYPE = 'DOCTYPE'
-  var XML_NAMESPACE = 'http://www.w3.org/XML/1998/namespace'
-  var XMLNS_NAMESPACE = 'http://www.w3.org/2000/xmlns/'
+  var XML_NAMESPACE = 'https://www.w3.org/XML/1998/namespace'
+  var XMLNS_NAMESPACE = 'https://www.w3.org/2000/xmlns/'
   var rootNS = { xml: XML_NAMESPACE, xmlns: XMLNS_NAMESPACE }
 
   // http://www.w3.org/TR/REC-xml/#NT-NameStartChar
@@ -72602,7 +72602,7 @@ URLBrowserResolver.prototype.resolve = function (url) {
 	if (!this.resolving[url]) {
 		var _this = this;
 		this.resolving[url] = new Promise(function (resolve, reject) {
-			if (url.toLowerCase().indexOf('https://') === 0 || url.toLowerCase().indexOf('http://') === 0) {
+			if (url.toLowerCase().indexOf('https://') === 0 || url.toLowerCase().indexOf('https://') === 0) {
 				fetchUrl(url).then(function (buffer) {
 					_this.fs.writeFileSync(url, buffer);
 					resolve();

@@ -6908,7 +6908,7 @@ function AutoLink_createClass(Constructor, protoProps, staticProps) { if (protoP
 
 
 
-var defaultScheme = 'http://';
+var defaultScheme = 'https://';
 var linkPattern = /^([A-Za-z][A-Za-z0-9+-.]*\:[\/]{2}|tel:|mailto:[A-Z0-9._%+-]+@|xmpp:[A-Z0-9._%+-]+@)?(www\.)?(.+)$/i;
 
 var AutoLink = /*#__PURE__*/function () {
@@ -9748,7 +9748,7 @@ var HintPopover = /*#__PURE__*/function () {
     height: null,
     linkTargetBlank: true,
     useProtocol: true,
-    defaultProtocol: 'http://',
+    defaultProtocol: 'https://',
     focus: false,
     tabDisabled: false,
     tabSize: 4,
