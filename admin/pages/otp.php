@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <title>Login Admin</title>
 
-    <link rel="stylesheet" href="../Public/admin/dist/css/style_login.css">
+    <link rel="stylesheet" href="./admin/Public/admin/dist/css/style_login.css">
 
     <style>
         .title_head{
@@ -79,7 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js'></script>
     <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js?r=182'></script>
-    <script src="../Public/admin/dist/js/login_check.js"></script>
+    <script src="./admin/Public/admin/dist/js/login_check.js"></script>
 
 </body>
 

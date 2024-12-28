@@ -91,7 +91,7 @@ $messages = $conn->query("
                                     <?php while ($row = $messages->fetch_assoc()): ?>
                                         <li class="chat-message <?php echo ($row['user_id'] == $user_id) ? 'sent' : 'received'; ?>">
                                             <div class="media">
-                                                <img src="../Public/avatar_default.png" alt="<?php echo htmlspecialchars($row['sender_name']); ?>" class="avatar mr-3" />
+                                                <img src="./admin/Public/avatar_default.png" alt="<?php echo htmlspecialchars($row['sender_name']); ?>" class="avatar mr-3" />
                                                 <div class="media-body">
                                                     <p><?php echo $row['message']; ?></p>
                                                     <small><?php echo date('H:i, d-m-Y', strtotime($row['created_at'])); ?></small>
@@ -288,7 +288,7 @@ $messages = $conn->query("
 
                         newMessage.innerHTML = `
                             <div class="media">
-                                <img src="../Public/avatar_default.png" alt="You" class="avatar mr-3" />
+                                <img src="./admin/Public/avatar_default.png" alt="You" class="avatar mr-3" />
                                 <div class="media-body">
                                     <p>${message}</p>
                                     <small>${new Date().toLocaleTimeString()} - ${new Date().toLocaleDateString()}</small>
@@ -321,7 +321,7 @@ $messages = $conn->query("
                         newMessage.className = 'chat-message ' + (row.user_id == <?php echo $user_id; ?> ? 'sent' : 'received');
                         newMessage.innerHTML = `
                             <div class="media">
-                                <img src="../Public/avatar_default.png" alt="${row.sender_name}" class="avatar mr-3" />
+                                <img src="./admin/Public/avatar_default.png" alt="${row.sender_name}" class="avatar mr-3" />
                                 <div class="media-body">
                                     <p>${row.message}</p>
                                     <small>${new Date(row.created_at).toLocaleTimeString()} - ${new Date(row.created_at).toLocaleDateString()}</small>

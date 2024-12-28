@@ -58,7 +58,7 @@ $conn->close();
     <div class="mb-4">
         <h5>Cuộc trò chuyện</h5>
         <div class="d-flex align-items-start">
-            <img src="/admin/Public/icon_chat.jpg" alt="" class="rounded-circle" style="width: 50px; height: 50px; margin-right: 10px;">
+            <img src="/admin/./admin/Public/icon_chat.jpg" alt="" class="rounded-circle" style="width: 50px; height: 50px; margin-right: 10px;">
             <div>
                 <p class="mb-1"><strong>Chào mừng bạn...</strong></p>
                 <p class="text-muted mb-0">Nhập thông tin cần hỗ trợ nào</p>
@@ -271,39 +271,39 @@ document.getElementById('sendSelectedMessages').addEventListener('click', functi
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<script src="../Public/admin/plugins/jquery/jquery.min.js"></script>
+<script src="./admin/Public/admin/plugins/jquery/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
-<script src="../Public/admin/plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="./admin/Public/admin/plugins/jquery-ui/jquery-ui.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
   $.widget.bridge('uibutton', $.ui.button)
 </script>
 <!-- Bootstrap 4 -->
-<script src="../Public/admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="./admin/Public/admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- ChartJS -->
-<script src="../Public/admin/plugins/chart.js/Chart.min.js"></script>
+<script src="./admin/Public/admin/plugins/chart.js/Chart.min.js"></script>
 <!-- Sparkline -->
-<!-- <script src="../Public/admin/plugins/sparklines/sparkline.js"></script> -->
+<!-- <script src="./admin/Public/admin/plugins/sparklines/sparkline.js"></script> -->
 <!-- JQVMap -->
-<script src="../Public/admin/plugins/jqvmap/jquery.vmap.min.js"></script>
-<script src="../Public/admin/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<script src="./admin/Public/admin/plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="./admin/Public/admin/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
 <!-- jQuery Knob Chart -->
-<script src="../Public/admin/plugins/jquery-knob/jquery.knob.min.js"></script>
+<script src="./admin/Public/admin/plugins/jquery-knob/jquery.knob.min.js"></script>
 <!-- daterangepicker -->
-<script src="../Public/admin/plugins/moment/moment.min.js"></script>
-<script src="../Public/admin/plugins/daterangepicker/daterangepicker.js"></script>
+<script src="./admin/Public/admin/plugins/moment/moment.min.js"></script>
+<script src="./admin/Public/admin/plugins/daterangepicker/daterangepicker.js"></script>
 <!-- Tempusdominus Bootstrap 4 -->
-<script src="../Public/admin/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<script src="./admin/Public/admin/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
 <!-- Summernote -->
-<script src="../Public/admin/plugins/summernote/summernote-bs4.min.js"></script>
+<script src="./admin/Public/admin/plugins/summernote/summernote-bs4.min.js"></script>
 <!-- overlayScrollbars -->
-<script src="../Public/admin/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<script src="./admin/Public/admin/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <!-- AdminLTE App -->
-<script src="../Public/admin/dist/js/adminlte.js"></script>
+<script src="./admin/Public/admin/dist/js/adminlte.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="../Public/admin/dist/js/demo.js"></script>
+<script src="./admin/Public/admin/dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<!-- <script src="../Public/admin/dist/js/pages/dashboard.js"></script> -->
+<!-- <script src="./admin/Public/admin/dist/js/pages/dashboard.js"></script> -->
 </body>
 </html>
 

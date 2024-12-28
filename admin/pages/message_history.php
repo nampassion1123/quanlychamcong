@@ -102,7 +102,7 @@ $messages_tp = $conn->query("
                                         <li class="chat-message d-flex justify-content-between align-items-center" onclick="goToChat(<?php echo $row['id']; ?>)">
                                             <div class="media w-100 d-flex justify-content-between align-items-center">
                                                 <div class="d-flex align-items-center flex-grow-1">
-                                                    <img src="../Public/avatardefault.png" alt="<?php echo htmlspecialchars($row['sender_name']); ?>" class="avatar mr-3" />
+                                                    <img src="./admin/Public/avatardefault.png" alt="<?php echo htmlspecialchars($row['sender_name']); ?>" class="avatar mr-3" />
                                                     <div class="media-body">
                                                         <h5 class="mt-0">
                                                             <?php echo htmlspecialchars(substr($row['sender_name'], 0, 10)); ?><?php echo (strlen($row['sender_name']) > 10) ? '...' : ''; ?>, Admin,
@@ -143,7 +143,7 @@ $messages_tp = $conn->query("
                                         <?php } else { ?>
                                             <li  class="chat-message d-flex justify-content-between align-items-center">
                                             <div class="media"  onclick="location.href='chat.php?message=<?php echo $row['id']; ?>'">
-                                                <img src="../Public/avatardefault.png" alt="<?php echo htmlspecialchars($row['sender_name']); ?>" class="avatar mr-3" />
+                                                <img src="./admin/Public/avatardefault.png" alt="<?php echo htmlspecialchars($row['sender_name']); ?>" class="avatar mr-3" />
                                                 <div class="media-body">
                                                     <h5 class="mt-0">
                                                         <?php echo htmlspecialchars(substr($row['sender_name'], 0, 10)); ?><?php echo (strlen($row['sender_name']) > 10) ? '...' : ''; ?>, Admin,
@@ -218,7 +218,7 @@ $messages_tp = $conn->query("
                                     <?php while ($row = $messages_tp->fetch_assoc()): ?>
                                         <li class="chat-message d-flex justify-content-between align-items-center">
                                             <div class="media"  onclick="location.href='chat.php?message=<?php echo $row['id']; ?>'">
-                                                <img src="../Public/avatardefault.png" alt="<?php echo htmlspecialchars($row['sender_name']); ?>" class="avatar mr-3" />
+                                                <img src="./admin/Public/avatardefault.png" alt="<?php echo htmlspecialchars($row['sender_name']); ?>" class="avatar mr-3" />
                                                 <div class="media-body">
                                                     <h5 class="mt-0">
                                                         <?php echo htmlspecialchars(substr($row['sender_name'], 0, 10)); ?><?php echo (strlen($row['sender_name']) > 10) ? '...' : ''; ?>, Admin,
@@ -283,7 +283,7 @@ $messages_tp = $conn->query("
                                         <?php if($row['active'] == 1) { ?>                                        
                                         <li class="chat-message" onclick="location.href='chat.php?message=<?php echo $row['id']; ?>'">
                                             <div class="media">
-                                                <img src="../Public/avatardefault.png" alt="<?php echo htmlspecialchars($row['sender_name']); ?>" class="avatar mr-3" />
+                                                <img src="./admin/Public/avatardefault.png" alt="<?php echo htmlspecialchars($row['sender_name']); ?>" class="avatar mr-3" />
                                                 <div class="media-body">
                                                     <h5 class="mt-0">
                                                         <?php echo htmlspecialchars(substr($row['sender_name'], 0, 10)); ?><?php echo (strlen($row['sender_name']) > 10) ? '...' : ''; ?>, Admin,
