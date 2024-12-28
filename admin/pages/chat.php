@@ -96,7 +96,7 @@ if ($message_id!=null) {
             ?>
             <li class="chat-message <?php echo ($row['user_id'] == $user_id) ? 'sent' : 'received'; ?>">
                 <div class="media">
-                    <img src="./admin/Public/avatardefault.png" alt="<?php echo htmlspecialchars($row['sender_name']); ?>" class="avatar mr-3 icon_chat" />
+                    <img src="../Public/avatardefault.png" alt="<?php echo htmlspecialchars($row['sender_name']); ?>" class="avatar mr-3 icon_chat" />
                     <div class="media-body d-flex justify-content-between align-items-center">
                         <div>
                             <p><?php echo $row['message']; ?></p>
@@ -154,7 +154,7 @@ if ($message_id!=null) {
         <?php while ($row = $messages_tp->fetch_assoc()): $row['assigned_to']?>
             <li class="chat-message <?php echo ($row['user_id'] == $user_id) ? 'sent' : 'received'; ?>">
                 <div class="media">
-                    <img src="./admin/Public/avatardefault.png" alt="<?php echo htmlspecialchars($row['sender_name']); ?>" class="avatar mr-3 icon_chat" />
+                    <img src="../Public/avatardefault.png" alt="<?php echo htmlspecialchars($row['sender_name']); ?>" class="avatar mr-3 icon_chat" />
                     <div class="media-body d-flex justify-content-between align-items-center">
                         <div>
                             <p><?php echo $row['message']; ?></p>
@@ -207,15 +207,15 @@ if ($message_id!=null) {
                                     <?php while ($row = $messages->fetch_assoc()): 
                                         
                                         $avatar = ($row['user_id'] == $user_id) ? 
-                                            ($row['sender_avatar'] ?: './admin/Public/admin/avatardefault.png') : 
-                                            ($row['receiver_avatar'] ?: './admin/Public/admin/avatardefault.png');
+                                            ($row['sender_avatar'] ?: '../Public/admin/avatardefault.png') : 
+                                            ($row['receiver_avatar'] ?: '../Public/admin/avatardefault.png');
                                         ?>
                                         <li class="chat-message <?php echo ($row['user_id'] == $user_id) ? 'sent' : 'received'; ?>">
                                             <div class="media">
                                                 <img src="<?php echo htmlspecialchars($avatar); ?>" 
                                                      alt="<?php echo htmlspecialchars($row['sender_name']); ?>" 
                                                      class="avatar mr-3"
-                                                     onerror="this.src='./admin/Public/admin/avatardefault.png'" />
+                                                     onerror="this.src='../Public/admin/avatardefault.png'" />
                                                 <div class="media-body">
                                                     <!-- <h5 class="mt-0"><?php echo htmlspecialchars($row['sender_name']); ?></h5> -->
                                                     <p><?php echo $row['message']; ?></p>
@@ -500,7 +500,7 @@ if ($message_id!=null) {
 
                     newMessage.innerHTML = `
                         <div class="media">
-                            <img src="./admin/Public/avatardefault.png" alt="You" class="avatar mr-3" />
+                            <img src="../Public/avatardefault.png" alt="You" class="avatar mr-3" />
                             <div class="media-body">
                                 <p>${message}</p>
                                 <small>${new Date().toLocaleTimeString()} - ${new Date().toLocaleDateString()}</small>

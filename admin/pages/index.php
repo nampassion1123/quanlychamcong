@@ -13,16 +13,14 @@ require_once '../../vendor/autoload.php';
 <html lang="en">
 
 <head>
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-    
     <meta charset="UTF-8">
     <title>Login Admin</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
-    <link rel="stylesheet" href="./admin/Public/admin/dist/css/style_login.css">
+    <link rel="stylesheet" href="../Public/admin/dist/css/style_login.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    
+
 
 </head>
 
@@ -138,10 +136,10 @@ require_once '../../vendor/autoload.php';
             <a href="dangky.php"><i class="glyphicon glyphicon-minus"></i>Signup</a>
         </div> -->
         <?php
-        require_once "../src/db.php";
         if (isset($_POST['btn'])) {
             $user = $_POST['user'];
             $pass = $_POST['pass'];
+            $conn = mysqli_connect('localhost', 'root', "", 'quanlychamcong');
             $sql = " select * from users where username='$user'";
             $sql1 = " select * from nhan_vien where username='$user'";
             $sql2 = " select * from users where username='$user' and role=2";
@@ -228,8 +226,8 @@ require_once '../../vendor/autoload.php';
 
 </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js'></script>
-    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js?r=182'></script>
-    <script src="./admin/Public/admin/dist/js/login_check.js"></script>
+    <script src='http://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js?r=182'></script>
+    <script src="../Public/admin/dist/js/login_check.js"></script>
 </body>
 
 </html>

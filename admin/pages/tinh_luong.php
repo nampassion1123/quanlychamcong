@@ -3,7 +3,10 @@ $manv = $_GET['Manv'];
 $hs = $_GET['Hs'];
 $tong = $_GET['Tong'];
 $days = $_GET['Day'];
-require_once "../src/db.php";
+$conn = mysqli_connect("localhost", "root", "", "quanlychamcong");
+//Số day đi làm
+// $day = $conn->query("SELECT * FROM cham_cong where Ma_nv = '$manv'");
+// $days = $day->num_rows;
 //Thưởng
 $sql2 = " SELECT sum(`So_tien`) FROM `thuong_phat` WHERE Ma_nv = '$manv' and Loai_hinh = 'Thưởng';";
 $result2 = mysqli_query($conn, $sql2) or die( "Có lỗi xảy ra: " . mysqli_error($conn));

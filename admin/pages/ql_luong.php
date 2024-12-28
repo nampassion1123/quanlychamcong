@@ -28,15 +28,14 @@ $ca_lam_viec = $conn->query("SELECT * FROM ca_lam_viec"); ?>
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <button onclick="window.location.href='add_luong.php'" class="btn btn-outline-success">Thêm
-                                mới</button>
+                            <button onclick="window.location.href='add_luong.php'" class="btn btn-outline-success">Thêm mới</button>
                             <!-- <h3 class="card-title">DataTable with minimal features & hover style</h3> -->
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
                             <table id="example" class="table table-bordered table-hover" style="text-align: center;">
                                 <thead>
-                                    <tr>
+                                    <tr >
                                         <th>Hệ số lương</th>
                                         <th>Lương cơ bản</th>
                                         <th>Hoạt động</th>
@@ -44,20 +43,17 @@ $ca_lam_viec = $conn->query("SELECT * FROM ca_lam_viec"); ?>
                                 </thead>
                                 <tbody>
                                     <?php
-                                    require_once "../src/db.php";
-
+                                    $conn = mysqli_connect('localhost', 'root', "", 'quanlychamcong') or die('không thể kết nối sql');
                                     $sql = "select * from luong";
                                     $result = mysqli_query($conn, $sql);
                                     $s = 0;
                                     // $result = mysqli_query($conn, "SELECT nhan_vien.*,bo_phan.tenbophan AS Ten FROM nhan_vien JOIN bo_phan ON nhan_vien.ID_bophan = bo_phan.ID;") or die("Câu lệnh truy vấn sai");
                                     while ($row = mysqli_fetch_assoc($result)) {
-                                        ?>
+                                    ?>
                                         <tr>
                                             <td><?php echo $row['He_so_luong']; ?></td>
-                                            <td><?php echo number_format($row['Luong_co_ban']), ' đồng '; ?></td>
-                                            <td style="text-align: center;"><button class="btn btn-danger"
-                                                    onclick="window.location.href='xoa_luong.php?x=<?php echo $row['He_so_luong'] ?>'"><i
-                                                        class="fas fa-trash"></i></button></td>
+                                            <td><?php echo  number_format($row['Luong_co_ban']), ' đồng '; ?></td>
+                                            <td style="text-align: center;"><button class="btn btn-danger" onclick="window.location.href='xoa_luong.php?x=<?php echo $row['He_so_luong'] ?>'"><i class="fas fa-trash"></i></button></td>
                                         </tr>
                                     <?php } ?>
                                 </tbody>

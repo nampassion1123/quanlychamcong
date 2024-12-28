@@ -27,7 +27,7 @@ algolia:
   icons:
     - algolia
   label: Algolia
-  url: 'https://www.algolia.com'
+  url: 'http://www.algolia.com'
 amazon-web-services:
   icons:
     - aws
@@ -37,7 +37,7 @@ amilia:
   icons:
     - amilia
   label: Amilia
-  url: 'https://www.amilia.com'
+  url: 'http://www.amilia.com'
 angry-creative:
   icons:
     - angrycreative
@@ -52,12 +52,12 @@ apper-systems-ab:
   icons:
     - apper
   label: Apper Systems AB
-  url: 'https://www.apper.com'
+  url: 'http://www.apper.com'
 'asymmetrik,ltd':
   icons:
     - asymmetrik
   label: 'Asymmetrik, Ltd.'
-  url: 'https://asymmetrik.com'
+  url: 'http://asymmetrik.com'
 ausmed-education:
   icons:
     - user-nurse
@@ -72,12 +72,12 @@ bi-mobject:
   icons:
     - bimobject
   label: BIMobject
-  url: 'https://bimobject.com'
+  url: 'http://bimobject.com'
 bity:
   icons:
     - bity
   label: Bity
-  url: 'https://bity.com'
+  url: 'http://bity.com'
 blackpulp-designs:
   icons:
     - person-praying
@@ -113,7 +113,7 @@ c-panel:
   icons:
     - cpanel
   label: cPanel
-  url: 'https://cpanel.com'
+  url: 'http://cpanel.com'
 cab-md:
   icons:
     - trillium
@@ -128,12 +128,12 @@ cibltd:
   icons:
     - drum-steelpan
   label: Comprehensive Insurance Brokers Limited
-  url: 'https://www.cibltd.com'
+  url: 'http://www.cibltd.com'
 clear-blue-technologies:
   icons:
     - solar-panel
   label: Clear Blue Technologies
-  url: 'https://www.clearbluetechnologies.com'
+  url: 'http://www.clearbluetechnologies.com'
 clicdata:
   icons:
     - input-text
@@ -187,12 +187,12 @@ cmplid:
   icons:
     - cmplid
   label: Cmplid
-  url: 'https://cmplid.com'
+  url: 'http://cmplid.com'
 cuttlefish:
   icons:
     - cuttlefish
   label: Cuttlefish
-  url: 'https://wearecuttlefish.com'
+  url: 'http://wearecuttlefish.com'
 cymedica:
   icons:
     - wave-square
@@ -212,12 +212,12 @@ deploy-dog:
   icons:
     - deploydog
   label: deploy.dog
-  url: 'https://deploy.dog'
+  url: 'http://deploy.dog'
 deskpro:
   icons:
     - deskpro
   label: Deskpro
-  url: 'https://www.deskpro.com'
+  url: 'http://www.deskpro.com'
 discourse:
   icons:
     - discourse
@@ -232,12 +232,12 @@ draft2-digital:
   icons:
     - draft2digital
   label: Draft2Digital
-  url: 'https://draft2digital.com'
+  url: 'http://draft2digital.com'
 dyalog-apl:
   icons:
     - dyalog
   label: Dyalog APL
-  url: 'https://www.dyalog.com'
+  url: 'http://www.dyalog.com'
 econopublish:
   icons:
     - hat-cowboy-side
@@ -247,7 +247,7 @@ firstdraft:
   icons:
     - firstdraft
   label: firstdraft
-  url: 'https://www.firstdraft.com'
+  url: 'http://www.firstdraft.com'
 fleetplan:
   icons:
     - helicopter
@@ -275,7 +275,7 @@ gofore:
   icons:
     - gofore
   label: Gofore
-  url: 'https://gofore.com'
+  url: 'http://gofore.com'
 graflr:
   icons:
     - binary-circle-check
@@ -290,7 +290,7 @@ gripfire-inc:
   icons:
     - gripfire
   label: 'Gripfire, Inc.'
-  url: 'https://gripfire.io'
+  url: 'http://gripfire.io'
 guilded:
   icons:
     - guilded
@@ -398,7 +398,7 @@ hub-spot:
   icons:
     - hubspot
   label: HubSpot
-  url: 'https://www.HubSpot.com'
+  url: 'http://www.HubSpot.com'
 in-site-systems:
   icons:
     - toolbox
@@ -423,7 +423,7 @@ joget:
   icons:
     - joget
   label: Joget
-  url: 'https://www.joget.org'
+  url: 'http://www.joget.org'
 jon-galloway:
   icons:
     - crow
@@ -464,7 +464,7 @@ med-apps:
   icons:
     - medapps
   label: MedApps
-  url: 'https://medapps.com.au'
+  url: 'http://medapps.com.au'
 medapps:
   icons:
     - pager
@@ -499,12 +499,12 @@ mix:
   icons:
     - mix
   label: Mix
-  url: 'https://mix.com'
+  url: 'http://mix.com'
 mizuni:
   icons:
     - mizuni
   label: Mizuni
-  url: 'https://www.mizuni.com'
+  url: 'http://www.mizuni.com'
 mrt:
   icons:
     - medrt
@@ -519,7 +519,7 @@ napster:
   icons:
     - napster
   label: Napster
-  url: 'https://www.napster.com'
+  url: 'http://www.napster.com'
 nfc-forum:
   icons:
     - nfc-symbol
@@ -559,7 +559,7 @@ nutritionix:
   icons:
     - nutritionix
   label: Nutritionix
-  url: 'https://www.nutritionix.com'
+  url: 'http://www.nutritionix.com'
 octopus-deploy:
   icons:
     - octopus-deploy
@@ -622,7 +622,7 @@ phabricator:
   icons:
     - phabricator
   label: Phabricator
-  url: 'https://phacility.com'
+  url: 'http://phacility.com'
 pindigo:
   icons:
     - pinball
@@ -643,7 +643,7 @@ polpharma:
   icons:
     - puzzle
   label: Polpharma
-  url: 'https://www.polpharma.com'
+  url: 'http://www.polpharma.com'
 preflight-technologies-inc:
   icons:
     - tickets-airline
@@ -657,7 +657,7 @@ preflight-technologies-inc:
     - seat-airline
     - plane-tail
   label: Preflight Technologies Incorporated
-  url: 'https://www.preflighttech.com/'
+  url: 'http://www.preflighttech.com/'
 promo-wizard:
   icons:
     - hat-wizard
@@ -692,7 +692,7 @@ readme-io:
   icons:
     - readme
   label: Readme.io
-  url: 'https://readme.io'
+  url: 'http://readme.io'
 red-river:
   icons:
     - red-river
@@ -728,7 +728,7 @@ rock-rms:
   icons:
     - rockrms
   label: Rock RMS
-  url: 'https://rockrms.com'
+  url: 'http://rockrms.com'
 rocket-chat:
   icons:
     - comment-plus
@@ -781,7 +781,7 @@ schlix:
   icons:
     - schlix
   label: SCHLIX
-  url: 'https://schlix.com'
+  url: 'http://schlix.com'
 screenpal:
   icons:
     - screenpal
@@ -791,7 +791,7 @@ search-eng-in:
   icons:
     - searchengin
   label: SearchEng.in
-  url: 'https://searcheng.in'
+  url: 'http://searcheng.in'
 service-stack:
   icons:
     - servicestack
@@ -812,7 +812,7 @@ shp:
   icons:
     - school
   label: SHP
-  url: 'https://shp.com'
+  url: 'http://shp.com'
 silicon-barn-inc:
   icons:
     - diagram-project
@@ -925,7 +925,7 @@ the-red-yeti:
   icons:
     - the-red-yeti
   label: The Red Yeti
-  url: 'https://theredyeti.com'
+  url: 'http://theredyeti.com'
 the-us-sunnah-foundation:
   icons:
     - circle-dollar-to-slot
@@ -1250,7 +1250,7 @@ vaadin:
   icons:
     - vaadin
   label: Vaadin
-  url: 'https://vaadin.com'
+  url: 'http://vaadin.com'
 via:
   icons:
     - user-injured

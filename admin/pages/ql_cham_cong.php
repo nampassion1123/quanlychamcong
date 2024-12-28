@@ -56,8 +56,8 @@ $ca_lam_viec = $conn->query("SELECT * FROM ca_lam_viec"); ?>
                                 </thead>
                                 <tbody>
                                     <?php
-                                    require_once "../src/db.php";
-
+                                    //Kết nối máy chủ MySQL.
+                                    $conn = mysqli_connect('localhost', 'root', "", 'quanlychamcong') or die('không thể kết nối sql');
                                     $date = '%';
                                     if (isset($_POST['date'])) {
                                         $date = '%' . $_POST['date'] . '%';

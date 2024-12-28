@@ -1,6 +1,6 @@
 <?php
 $manv=$_GET['x'];
-$con=mysqli_connect('db-mysql-nyc3-95634-do-user-18598910-0.i.db.ondigitalocean.com', 'doadmin', "AVNS_ng7n4COe0AhJXEnSBsS", 'quanlychamcong')or die("Kết nối database không thành công");
+$con=mysqli_connect('localhost','root',"",'quanlychamcong')or die("Kết nối database không thành công");
 $sql1="DELETE from phan_ca_lam where Ma_nv='$manv'";
 mysqli_query($con, $sql1) or die("Đã xảy ra lỗi!");
 

@@ -6589,7 +6589,7 @@
 	
 		if ( tn ) {
 			msg += '. For more information about this error, please see '+
-			'https://datatables.net/tn/'+tn;
+			'http://datatables.net/tn/'+tn;
 		}
 	
 		if ( ! level  ) {

@@ -1,6 +1,8 @@
 <?php require 'header.php' ?>
 <?php require_once "../src/db.php";
+$conn = mysqli_connect("localhost","root","","quanlychamcong");
 $id = $_GET['ID'];
+
 $sql = "SELECT * FROM bo_phan WHERE ID = '$id'"; 
 $result = mysqli_query($conn, $sql);
 $bo_phan = mysqli_fetch_assoc($result);

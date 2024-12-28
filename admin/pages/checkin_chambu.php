@@ -1,11 +1,12 @@
 <?php
-require_once "../src/db.php";
-
 date_default_timezone_set('Asia/Ho_Chi_Minh');
 $manv = $_POST['Ma_nv'];
 $today = date("Y/m/d");
 $datetime = new DateTime();
 $curtime = $datetime->format('H:i:s');
+
+// Kết nối tới cơ sở dữ liệu
+$conn = mysqli_connect("localhost", "root", "", "quanlychamcong");
 
 // Lấy giờ bắt đầu của ca làm việc
 $sql_ca = "SELECT Gio_bat_dau FROM cham_bu WHERE Ma_nv = '$manv' AND Ngay_cham_bu = CURDATE() LIMIT 1";

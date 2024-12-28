@@ -1076,8 +1076,8 @@ $result2 = $conn->query($sql1);
 
 </div>
 <!-- /.content-wrapper -->
-<script type="text/javascript" src="./admin/Public/admin/plugins/jquery/jquery.min.js"></script>
-<script type="text/javascript" src="./admin/Public/admin/plugins/chart.js/Chart.min.js"></script>
+<script type="text/javascript" src="../Public/admin/plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../Public/admin/plugins/chart.js/Chart.min.js"></script>
 <script>
 $(document).ready(function() {
     showGraph();

@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-
 <title>Tạo biểu đồ sử dụng PHP và Chart.js</title>
 <style type="text/css">
 BODY {
@@ -14,8 +12,8 @@ BODY {
     height: auto;
 }
 </style>
-<script type="text/javascript" src="./admin/Public/admin/plugins/jquery/jquery.min.js"></script>
-<script type="text/javascript" src="./admin/Public/admin/plugins/chart.js/Chart.min.js"></script>
+<script type="text/javascript" src="../Public/admin/plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../Public/admin/plugins/chart.js/Chart.min.js"></script>
 
 
 </head>

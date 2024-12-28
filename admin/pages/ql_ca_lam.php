@@ -50,8 +50,9 @@ if (isset($row1)) {
                             <div class="card-body table-responsive p-4">
 
                                 <?php
-                                require_once "../src/db.php";
-                              // Truy vấn dữ liệu cho Thứ 2 - Thứ 7
+                                $conn = mysqli_connect('localhost', 'root', '', 'quanlychamcong') or die('Không thể kết nối SQL');
+
+                                // Truy vấn dữ liệu cho Thứ 2 - Thứ 7
                                 $sql_weekdays = "SELECT Tenca, Gio_bat_dau, Gio_ket_thuc FROM ca_lam_viec WHERE Thu = '2-7' ORDER BY Gio_bat_dau";
                                 $result_weekdays = mysqli_query($conn, $sql_weekdays);
 

@@ -1,8 +1,8 @@
 <?php
-  $servername = "db-mysql-nyc3-95634-do-user-18598910-0.i.db.ondigitalocean.com"; //Khai báo server
-  $username = "doadmin";// Khai báo username
-  $password = "AVNS_ng7n4COe0AhJXEnSBsS";// Khai báo password
-  $dbname = "quanlychamcong"; // K
+ $servername = "localhost";
+ $username = "root";
+ $password = "";
+ $dbname = "quanlychamcong";
  $conn = new PDO("mysql:host=$servername;dbname=$dbname;", $username, $password);
 
     header('Content-Type: application/json');

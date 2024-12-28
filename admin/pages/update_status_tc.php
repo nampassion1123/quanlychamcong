@@ -1,5 +1,5 @@
 <?php
-require_once "../src/db.php";
+$conn = mysqli_connect("localhost","root","","quanlychamcong");
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $id = $_POST['id'];
