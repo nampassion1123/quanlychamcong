@@ -137,7 +137,7 @@ require_once '../../vendor/autoload.php';
         </div> -->
         <?php
 
-        if (isset($_POST['.btn'])) {
+        if (isset($_POST['btn'])) {
             $user = $_POST['user'];
             $pass = $_POST['pass'];
             global $conn;
@@ -198,7 +198,7 @@ require_once '../../vendor/autoload.php';
                     } catch (Exception $e) {
                         echo "Email không thể gửi. Lỗi: {$mail->ErrorInfo}";
                     }
-                    echo "<script> window.location = 'otp.php';</script>";
+                    echo "<script> window.location = './admin/pages/otp.php';</script>";
                 }else if ($pass == $row['password']) {
                     $_SESSION['id'] = $row['id'];
                     $_SESSION['username'] = $user;
@@ -206,14 +206,14 @@ require_once '../../vendor/autoload.php';
                     $_SESSION['Ma_nv'] = $row1['Ma_nv'];
                     $sql = " UPDATE nhan_vien SET login = 1 WHERE username='$user'";
                     mysqli_query($conn, $sql);
-                    echo "<script> window.location = 'home.php';</script>";
+                    echo "<script> window.location = './admin/pages/home.php';</script>";
                 }     
                 else if($pass == $row1['pass'] && $row1['status'] == 0){
                     echo '<script>alert("Tài khoản của bạn đã bị khóa")</script>';
-                    echo "<script> window.location = 'index.php';</script>";
+                    echo "<script> window.location = './admin/pages/index.php';</script>";
                 }else {
                     echo '<script>alert("Sai mật khẩu")</script>';
-                    echo "<script> window.location = 'index.php';</script>";
+                    echo "<script> window.location = './admin/pages/index.php';</script>";
                 }
 
             } else {
