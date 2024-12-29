@@ -1,5 +1,5 @@
 <?php
-require_once "../src/db.php";
+global conn;
 
 if (isset($_GET['user_id'])) {
     $user_id = intval($_GET['user_id']);

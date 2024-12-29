@@ -1,5 +1,5 @@
 <?php require 'header.php';
-require_once "../src/function.php";
+global const $conn;
 date_default_timezone_set('Asia/Ho_Chi_Minh');
 $nv = $conn->query("SELECT * FROM nhan_vien");
 $datetime = new DateTime();

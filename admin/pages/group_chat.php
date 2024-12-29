@@ -1,5 +1,5 @@
 <?php require 'header.php'; ?>
-<?php require_once "../src/db.php"; 
+<?php global conn; 
 $user_id = $_SESSION['id'];
 $role = $_SESSION['role'];
 

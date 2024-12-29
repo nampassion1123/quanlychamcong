@@ -4,7 +4,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 // Tải autoload.php
-require_once '../../vendor/autoload.php';
+require_once './vendor/autoload.php';
 ?>
 
 
@@ -136,10 +136,11 @@ require_once '../../vendor/autoload.php';
             <a href="dangky.php"><i class="glyphicon glyphicon-minus"></i>Signup</a>
         </div> -->
         <?php
+
         if (isset($_POST['btn'])) {
             $user = $_POST['user'];
             $pass = $_POST['pass'];
-            $conn = mysqli_connect('localhost', 'root', "", 'quanlychamcong');
+            global $conn;
             $sql = " select * from users where username='$user'";
             $sql1 = " select * from nhan_vien where username='$user'";
             $sql2 = " select * from users where username='$user' and role=2";

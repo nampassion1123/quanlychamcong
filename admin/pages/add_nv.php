@@ -1,6 +1,6 @@
 <?php require 'header.php' ?>
 <?php require 'table.html' ?>
-<?php require_once "../src/db.php";
+<?php global conn;
 $bo_phan = $conn->query("SELECT * FROM bo_phan");
 $ca_lam_viec = $conn->query("SELECT * FROM ca_lam_viec");
 $luong = $conn->query("SELECT * FROM luong"); ?>

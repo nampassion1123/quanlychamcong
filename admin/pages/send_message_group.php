@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "../src/db.php"; // Kết nối với cơ sở dữ liệu
+global conn; // Kết nối với cơ sở dữ liệu
 
 $user_id = $_SESSION['id'];
 $message = $_POST['message'];

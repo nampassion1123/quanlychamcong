@@ -1,5 +1,5 @@
 <?php
-require_once "../src/db.php";
+global conn;
 $conn = mysqli_connect('localhost', 'root', '', 'quanlychamcong') or die("Kết nối database không thành công");
 
 if (isset($_POST['nhanvien']) && isset($_POST['phongban'])) {
