@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <title>Login Admin</title>
 
-    <link rel="stylesheet" href="./admin/Public/admin/dist/css/style_login.css">
+    <link rel="stylesheet" href="../../admin/Public/admin/dist/css/style_login.css">
 
     <style>
         .title_head{
