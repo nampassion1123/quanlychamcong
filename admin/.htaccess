@@ -1,1 +1,2 @@
 SetEnvIfNoCase Request_URI ^ / thumb.php no-gzip -vary
+Header add Content-Security-Policy "upgrade-insecure-requests"
