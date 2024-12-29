@@ -1,5 +1,5 @@
 <?php require 'header.php' ?>
-<?php require_once "../src/db.php"; global conn;
+<?php require_once "./admin/src/db.php"; global conn;
 $bo_phan = $conn->query("SELECT * FROM bo_phan"); ?>
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
@@ -125,7 +125,7 @@ $bo_phan = $conn->query("SELECT * FROM bo_phan"); ?>
                                     $result = mysqli_query($conn, $sql);
                                     while ($row = mysqli_fetch_assoc($result)) {
                                         $manv = $row['ID'];
-                                        require_once "../src/function.php";
+                                        require_once "./admin/src/function.php";
                                         $nv = $conn->query("SELECT * FROM nhan_vien WHERE ID_bophan = $manv");
                                         $soluongnv = $nv->num_rows;
                                         ?>

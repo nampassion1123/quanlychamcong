@@ -1,5 +1,5 @@
 <?php
-require_once "../src/db.php"; global conn;
+require_once "./admin/src/db.php"; global conn;
 
 if (isset($_POST['nhanvien']) && isset($_POST['phongban'])) {
     $nhanVienIds = json_decode($_POST['nhanvien']);

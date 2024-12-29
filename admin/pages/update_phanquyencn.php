@@ -1,5 +1,5 @@
 <?php
-require_once "../src/db.php"; global conn;
+require_once "./admin/src/db.php"; global conn;
 
 $data = json_decode(file_get_contents('php://input'), true);
 $username = $data['username'];

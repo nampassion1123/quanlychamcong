@@ -1,7 +1,7 @@
 <?php
 $manv = $_GET['Ma_nv'];
 $today = date("Y/m/d");
-require_once "../src/db.php"; global conn;
+require_once "./admin/src/db.php"; global conn;
 $sql = " select * from cham_cong where Ngay='$today' and Ma_nv = '$manv'";
 $kq_con = mysqli_query($conn, $sql);
 $dem = mysqli_num_rows($kq_con);

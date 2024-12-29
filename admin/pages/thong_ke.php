@@ -1,6 +1,6 @@
 <?php require 'header.php' ?>
 <?php 
-require_once "../src/db.php"; global conn;
+require_once "./admin/src/db.php"; global conn;
 $bo_phan = $conn->query("SELECT * FROM bo_phan");
 $ca_lam_viec = $conn->query("SELECT * FROM ca_lam_viec"); ?>
 <!-- Content Wrapper. Contains page content -->
@@ -110,7 +110,7 @@ $ca_lam_viec = $conn->query("SELECT * FROM ca_lam_viec"); ?>
                                         if (mysqli_num_rows($result) > 0) {
                                             while ($row = mysqli_fetch_assoc($result)) {
                                                 $manv = $row['Ma_nv'];
-                                                require_once "../src/function.php";
+                                                require_once "./admin/src/function.php";
                                                 //Số day đi làm trong tháng
                                                 $day = $conn->query("SELECT * FROM cham_cong where Ma_nv = '$manv'and MONTH(Ngay) = '$month'");
                                                 $days = $day->num_rows;

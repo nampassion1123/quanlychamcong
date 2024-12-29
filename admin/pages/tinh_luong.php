@@ -3,7 +3,7 @@ $manv = $_GET['Manv'];
 $hs = $_GET['Hs'];
 $tong = $_GET['Tong'];
 $days = $_GET['Day'];
-require_once "../src/db.php"; global conn;
+require_once "./admin/src/db.php"; global conn;
 //Số day đi làm
 // $day = $conn->query("SELECT * FROM cham_cong where Ma_nv = '$manv'");
 // $days = $day->num_rows;

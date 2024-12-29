@@ -5,7 +5,7 @@ $today = date("Y/m/d");
 $datetime = new DateTime();
 $curtime = $datetime->format('H:i:s');
 // var_dump($manv,$curtime);
-require_once "../src/db.php"; global conn;
+require_once "./admin/src/db.php"; global conn;
 
 $sql = "INSERT INTO cham_cong(Ma_nv, Ngay, Gio_checkin, Gio_checkout, Tinh_trang) VALUES('$manv','$today', '$curtime', NULL,'Đi làm')";
 $result = mysqli_query($conn, $sql);

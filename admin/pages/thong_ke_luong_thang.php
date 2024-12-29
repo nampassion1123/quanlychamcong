@@ -1,5 +1,5 @@
 <?php require 'header.php' ?>
-<?php require_once "../src/db.php"; global conn; ?>
+<?php require_once "./admin/src/db.php"; global conn; ?>
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -73,7 +73,7 @@
                                         if (mysqli_num_rows($result) > 0) {
                                             while ($row = mysqli_fetch_assoc($result)) {
                                                 $manv = $row['Ma_nv'];
-                                                require_once "../src/function.php";
+                                                require_once "./admin/src/function.php";
                                                 //Thưởng
                                                 $sql2 = " SELECT sum(`Tong`) FROM `nhan_luong` WHERE Ma_nv = '$manv' and Tinh_trang = 'Đã thanh toán' and MONTH(Thoi_gian) ='$month'  and YEAR(Thoi_gian) ='$year' ";
                                                 $result2 = mysqli_query($conn, $sql2) or die("Câu truy vấn sai!");

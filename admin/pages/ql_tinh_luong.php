@@ -1,5 +1,5 @@
 <?php require 'header.php' ?>
-<?php require_once "../src/db.php"; global conn;
+<?php require_once "./admin/src/db.php"; global conn;
 $nhan_vien = $conn->query("SELECT * FROM nhan_vien");
 $bo_phan = $conn->query("SELECT * FROM bo_phan");
 $ca_lam_viec = $conn->query("SELECT * FROM ca_lam_viec");
@@ -67,7 +67,7 @@ $he_so_luong = $conn->query("SELECT * FROM luong"); ?>
                                     $result = mysqli_query($conn, $sql) or die("Câu truy vấn sai!");
                                     while ($row = mysqli_fetch_assoc($result)) {
                                         $manv = $row['Ma_nv'];
-                                        require_once "../src/function.php";
+                                        require_once "./admin/src/function.php";
                                         //Số day đi làm
                                         $day = $conn->query("SELECT * FROM cham_cong where Ma_nv = '$manv'and MONTH(Ngay) = '$month' and YEAR(Ngay) ='$year'");
                                         $days = $day->num_rows;

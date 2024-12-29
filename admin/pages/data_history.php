@@ -1,5 +1,5 @@
 <?php require 'header.php';
-require_once "../src/function.php";
+require_once "./admin/src/function.php";
 $nv = $conn->query("SELECT * FROM nhan_vien");
 $manv = $_SESSION['Ma_nv'];
 $today = date("d/m/Y");

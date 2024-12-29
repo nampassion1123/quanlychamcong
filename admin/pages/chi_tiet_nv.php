@@ -1,5 +1,5 @@
 <?php require 'header.php' ?>
-<?php require_once "../src/db.php"; global conn;
+<?php require_once "./admin/src/db.php"; global conn;
 $nhan_vien = $conn->query("SELECT * FROM nhan_vien");
 $bo_phan = $conn->query("SELECT * FROM bo_phan");
 $ca_lam_viec = $conn->query("SELECT * FROM ca_lam_viec");

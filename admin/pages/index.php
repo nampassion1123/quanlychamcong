@@ -2,7 +2,7 @@
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-require_once "../src/db.php"; global conn;
+require_once "./admin/src/db.php"; global conn;
 // Tải autoload.php
 require_once '../../vendor/autoload.php';
 ?>

@@ -1,5 +1,5 @@
 <?php require 'header.php' ?>
-<?php require_once "../src/db.php"; global conn;
+<?php require_once "./admin/src/db.php"; global conn;
 $bo_phan = $conn->query("SELECT * FROM bo_phan");
 $ca_lam_viec = $conn->query("SELECT * FROM ca_lam_viec"); ?>
 <!-- Content Wrapper. Contains page content -->
@@ -65,7 +65,7 @@ $ca_lam_viec = $conn->query("SELECT * FROM ca_lam_viec"); ?>
                                         if (mysqli_num_rows($result) > 0) {
                                             while ($row = mysqli_fetch_assoc($result)) {
                                                 $manv = $row['Ma_nv'];
-                                                require_once "../src/function.php";
+                                                require_once "./admin/src/function.php";
                                                 //Thưởng
                                                 $sql2 = " SELECT sum(`So_tien`) FROM `thuong_phat` WHERE Ma_nv = '$manv' and Loai_hinh = 'Thưởng'  and YEAR(Ngay_thuc_hien) ='$year' ";
                                                 $result2 = mysqli_query($conn, $sql2) or die("Câu truy vấn sai!");

@@ -1,5 +1,5 @@
 <?php
-require_once "../src/db.php"; global conn;
+require_once "./admin/src/db.php"; global conn;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $id = $_POST['id'];

@@ -1,5 +1,5 @@
 <?php
-require_once "../src/db.php"; global conn;
+require_once "./admin/src/db.php"; global conn;
 
 // Lấy dữ liệu từ yêu cầu AJAX
 $data = json_decode(file_get_contents("php://input"), true);

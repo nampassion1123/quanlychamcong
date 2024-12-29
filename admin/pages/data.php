@@ -1,5 +1,5 @@
 <?php
- require_once "../src/db.php"; global conn;
+ require_once "./admin/src/db.php"; global conn;
 
     header('Content-Type: application/json');
     $data = array();

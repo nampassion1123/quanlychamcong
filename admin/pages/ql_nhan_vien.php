@@ -1,5 +1,5 @@
 <?php require 'header.php' ?>
-<?php require_once "../src/db.php"; global conn;
+<?php require_once "./admin/src/db.php"; global conn;
 $ca_lam_viec = $conn->query("SELECT * FROM ca_lam_viec"); ?>
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
