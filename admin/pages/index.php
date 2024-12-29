@@ -26,7 +26,7 @@ require_once '../../vendor/autoload.php';
 
 <body>
 
-    <form action="" method="post">
+    <form action="login" method="post">
         <div style="text-align:center;font-size: 20px;margin-bottom: 10px;font-weight:bold;color:#3699FF;" class="rb-zeplin-focused">
             LOGIN
         </div>
@@ -136,8 +136,7 @@ require_once '../../vendor/autoload.php';
             <a href="dangky.php"><i class="glyphicon glyphicon-minus"></i>Signup</a>
         </div> -->
         <?php
-
-        if (isset($_POST['btn'])) {
+        function login(){
             $user = $_POST['user'];
             $pass = $_POST['pass'];
             global $conn;
@@ -222,6 +221,7 @@ require_once '../../vendor/autoload.php';
 
             }
         }
+       
         ?>
     </form>
 
