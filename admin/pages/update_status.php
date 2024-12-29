@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost","root","","quanlychamcong");
+global conn;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $ma_nv = $_POST['Ma_nv'];

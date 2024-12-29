@@ -1,5 +1,5 @@
 <?php
-$servername = "mongodb+srv://quanlychamcong-a9d08393.mongo.ondigitalocean.com:25060"; //Khai báo server
+$servername = "https://db-mysql-nyc3-95634-do-user-18598910-0.i.db.ondigitalocean.com:25060"; //Khai báo server
 $username = "doadmin";// Khai báo username
 $password = "AVNS_ng7n4COe0AhJXEnSBsS";// Khai báo password
 $dbname = "quanlychamcong"; // Khai báo database
