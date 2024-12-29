@@ -122,11 +122,11 @@ require_once '../../vendor/autoload.php';
         </div>
 
         <div class="inputGroup inputGroup1">
-            <input type="text" id="email" class="email" name="user" maxlength="50" required placeholder="Username" />
+            <input type="text" id="email" class="email" name="user" maxlength="50" required placeholder="Username" autocomplete="off" />
             <span class="indicator"></span>
         </div>
         <div class="inputGroup inputGroup2">
-            <input type="password" id="password" name="pass" class="password" maxlength="30" required placeholder="Password" />
+            <input type="password" id="password" name="pass" class="password" maxlength="30" required placeholder="Password" autocomplete="off" />
         </div>
       
         <div class="inputGroup inputGroup3">
