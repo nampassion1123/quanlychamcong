@@ -1,5 +1,5 @@
 <?php session_start();
-require_once "../src/db.php"; 
+require_once "../src/db.php"; global conn;
 $user_id = $_SESSION['id'];
 $resultUserNow = $conn->query("SELECT * FROM users WHERE id = $user_id");
 $rowUserNow = $resultUserNow->fetch_assoc();

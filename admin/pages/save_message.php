@@ -5,14 +5,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-// Kết nối đến cơ sở dữ liệu
-$servername = "localhost"; // Thay bằng tên máy chủ của bạn
-$username = "root"; // Thay bằng tên người dùng của bạn
-$password = ""; // Thay bằng mật khẩu của bạn
-$dbname = "quanlychamcong"; // Thay bằng tên cơ sở dữ liệu của bạn
-
-// Tạo kết nối
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+require_once "../src/db.php"; global conn;
 
 // Kiểm tra kết nối
 if (!$conn) {

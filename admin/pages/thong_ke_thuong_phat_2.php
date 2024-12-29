@@ -1,5 +1,5 @@
 <?php require 'header.php' ?>
-<?php require_once "../src/db.php";
+<?php require_once "../src/db.php"; global conn;
 $bo_phan = $conn->query("SELECT * FROM bo_phan");
 $ca_lam_viec = $conn->query("SELECT * FROM ca_lam_viec"); ?>
 <!-- Content Wrapper. Contains page content -->
@@ -54,6 +54,7 @@ $ca_lam_viec = $conn->query("SELECT * FROM ca_lam_viec"); ?>
                                 </thead>
                                 <tbody>
                                     <?php
+                                    global conn;
                                     $year = date('Y');
                                     if (isset($_GET['search'])) {
                                         $year = intval($_GET['year']);

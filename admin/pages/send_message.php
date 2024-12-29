@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "../src/db.php"; // Kết nối với cơ sở dữ liệu
+require_once "../src/db.php"; global conn;
 
 $user_id = $_SESSION['id'];
 $assigned_to = $_POST['assigned_to'];

@@ -1,6 +1,6 @@
 <?php require 'header.php' ?>
 <?php require 'table.html' ?>
-<?php require_once "../src/db.php";
+<?php require_once "../src/db.php"; global conn;
  ?>
 <div class="content-wrapper">
     <div class="content-header">

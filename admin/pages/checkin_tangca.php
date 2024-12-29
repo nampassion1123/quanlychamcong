@@ -4,9 +4,7 @@ $manv = $_POST['Ma_nv'];
 $today = date("Y/m/d");
 $datetime = new DateTime();
 $curtime = $datetime->format('H:i:s');
-
-// Kết nối tới cơ sở dữ liệu
-$conn = mysqli_connect("localhost", "root", "", "quanlychamcong");
+require_once "../src/db.php"; global conn;
 
 // Lấy giờ bắt đầu của ca làm việc
 $sql_ca = "SELECT Gio_bat_dau FROM tang_ca WHERE Ma_nv = '$manv' AND Ngay = CURDATE() LIMIT 1";

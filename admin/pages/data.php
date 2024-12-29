@@ -1,9 +1,5 @@
 <?php
- $servername = "localhost";
- $username = "root";
- $password = "";
- $dbname = "quanlychamcong";
- $conn = new PDO("mysql:host=$servername;dbname=$dbname;", $username, $password);
+ require_once "../src/db.php"; global conn;
 
     header('Content-Type: application/json');
     $data = array();

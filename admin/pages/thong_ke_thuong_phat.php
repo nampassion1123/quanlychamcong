@@ -1,5 +1,6 @@
 <?php require 'header.php' ?>
-<?php require_once "../src/db.php"; ?>
+<?php 
+require_once "../src/db.php"; global conn; ?>
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -67,6 +68,7 @@
                                 </thead>
                                 <tbody>
                                     <?php
+
                                     $year = date('Y');
                                     $month = date('m');
                                     if (isset($_GET['search'])) {

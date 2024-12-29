@@ -1,5 +1,5 @@
 <?php require 'header.php' ?>
-<?php require_once "../src/db.php";
+<?php require_once "../src/db.php"; global conn;
 $bo_phan = $conn->query("SELECT * FROM bo_phan"); ?>
 <div class="content-wrapper" style="min-height: 353px;">
     <div class="content-header">

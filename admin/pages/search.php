@@ -28,10 +28,10 @@
     <tbody>
     <?php
     /*Kết nối máy chủ MySQL. Máy chủ có cài đặt mặc định (user là 'root' và không có mật khẩu)*/
-    $link = mysqli_connect("localhost", "root", "", "demo");
+    require_once "../src/db.php"; global conn;
  
     // Kểm tra kết nối
-    if ($link === false) {
+    if ($conn === false) {
         die("ERROR: Không thể kết nối. " . mysqli_connect_error());
     }
  
@@ -41,7 +41,7 @@
     }
     // Thực hiện câu lệnh SELECT
     $sql = "SELECT * FROM customer WHERE last_name LIKE '$lname'";
-    if ($result = mysqli_query($link, $sql)) {
+    if ($result = mysqli_query($conn, $sql)) {
         if (mysqli_num_rows($result) > 0) {
             while ($row = mysqli_fetch_array($result)) {
                 ?>

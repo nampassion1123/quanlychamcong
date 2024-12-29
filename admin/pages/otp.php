@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+require_once "../src/db.php"; global conn;
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $input_otp = $_POST['otp'];
     
@@ -9,7 +9,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         
         // Chuyển hướng đến trang home.php
         $user = $_SESSION['Ma_nv'];
-        $conn = mysqli_connect('localhost', 'root', "", 'quanlychamcong');
         $sql = " UPDATE nhan_vien SET login = 1 WHERE Ma_nv='$user'";
         $result = mysqli_query($conn, $sql);
         if($result){
@@ -75,7 +74,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js'></script>
-    <script src='http://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js?r=182'></script>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js?r=182'></script>
     <script src="../Public/admin/dist/js/login_check.js"></script>
 
 </body>

@@ -1,6 +1,5 @@
 <?php
-require_once "../src/db.php";
-$conn = mysqli_connect('localhost', 'root', '', 'quanlychamcong') or die("Kết nối database không thành công");
+require_once "../src/db.php"; global conn;
 
 if (isset($_POST['nhanvien']) && isset($_POST['phongban'])) {
     $nhanVienIds = json_decode($_POST['nhanvien']);
