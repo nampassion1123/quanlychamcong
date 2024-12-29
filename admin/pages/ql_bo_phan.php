@@ -1,5 +1,5 @@
 <?php require 'header.php' ?>
-<?php global conn;
+<?php require_once "../src/db.php";
 $bo_phan = $conn->query("SELECT * FROM bo_phan"); ?>
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">

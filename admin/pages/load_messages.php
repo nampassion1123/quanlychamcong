@@ -1,5 +1,5 @@
 <?php
-global conn;
+require_once "../src/db.php";
 session_start();
 $user_id = $_SESSION['id'];
 

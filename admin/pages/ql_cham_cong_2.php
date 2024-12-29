@@ -1,5 +1,5 @@
 <?php require 'header.php' ?>
-<?php global conn; ?>
+<?php require_once "../src/db.php"; ?>
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <section class="content-header">

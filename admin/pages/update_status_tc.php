@@ -1,5 +1,5 @@
 <?php
-global conn;
+$conn = mysqli_connect("localhost","root","","quanlychamcong");
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $id = $_POST['id'];

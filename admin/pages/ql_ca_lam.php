@@ -1,5 +1,5 @@
 <?php require 'header.php' ?>
-<?php global conn;
+<?php require_once "../src/db.php";
 $bo_phan = $conn->query("SELECT * FROM bo_phan");
 $ca_lam_viec = $conn->query("SELECT * FROM ca_lam_viec");
 $email = $_SESSION['username'];

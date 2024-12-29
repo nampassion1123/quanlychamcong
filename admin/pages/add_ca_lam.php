@@ -1,6 +1,6 @@
 <?php require 'table.html' ?>
 <?php require 'header.php' ?>
-<?php global conn;
+<?php require_once "../src/db.php";
 $nhan_vien = $conn->query("SELECT * FROM nhan_vien");
 ?>
 <div class="content-wrapper" style="min-height: 353px;">

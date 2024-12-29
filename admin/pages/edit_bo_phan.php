@@ -1,5 +1,5 @@
 <?php require 'header.php' ?>
-<?php global conn;
+<?php require_once "../src/db.php";
 $conn = mysqli_connect("localhost","root","","quanlychamcong");
 $id = $_GET['ID'];
 

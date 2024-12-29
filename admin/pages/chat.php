@@ -1,5 +1,5 @@
 <?php require 'header.php'; ?>
-<?php global conn; 
+<?php require_once "../src/db.php"; 
 $user_id = $_SESSION['id'];
 $message_id = $_GET['message']; // Lấy ID tin nhắn từ URL
 

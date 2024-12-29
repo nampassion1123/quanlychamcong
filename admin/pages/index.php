@@ -18,7 +18,7 @@ require_once '../../vendor/autoload.php';
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
-    <link rel="stylesheet" href="./admin/Public/admin/dist/css/style_login.css">
+    <link rel="stylesheet" href="../Public/admin/dist/css/style_login.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 
@@ -26,7 +26,7 @@ require_once '../../vendor/autoload.php';
 
 <body>
 
-    <form action="login" method="post">
+    <form action="" method="post">
         <div style="text-align:center;font-size: 20px;margin-bottom: 10px;font-weight:bold;color:#3699FF;" class="rb-zeplin-focused">
             LOGIN
         </div>
@@ -122,11 +122,11 @@ require_once '../../vendor/autoload.php';
         </div>
 
         <div class="inputGroup inputGroup1">
-            <input type="text" id="email" class="email" name="user" maxlength="50" required placeholder="Username" autocomplete="off" />
+            <input type="text" id="email" class="email" name="user" maxlength="50" required placeholder="Username" />
             <span class="indicator"></span>
         </div>
         <div class="inputGroup inputGroup2">
-            <input type="password" id="password" name="pass" class="password" maxlength="30" required placeholder="Password" autocomplete="off" />
+            <input type="password" id="password" name="pass" class="password" maxlength="30" required placeholder="Password" />
         </div>
       
         <div class="inputGroup inputGroup3">
@@ -136,10 +136,10 @@ require_once '../../vendor/autoload.php';
             <a href="dangky.php"><i class="glyphicon glyphicon-minus"></i>Signup</a>
         </div> -->
         <?php
-        function login(){
+        if (isset($_POST['btn'])) {
             $user = $_POST['user'];
             $pass = $_POST['pass'];
-            global $conn;
+            $conn = mysqli_connect('localhost', 'root', "", 'quanlychamcong');
             $sql = " select * from users where username='$user'";
             $sql1 = " select * from nhan_vien where username='$user'";
             $sql2 = " select * from users where username='$user' and role=2";
@@ -197,7 +197,7 @@ require_once '../../vendor/autoload.php';
                     } catch (Exception $e) {
                         echo "Email không thể gửi. Lỗi: {$mail->ErrorInfo}";
                     }
-                    echo "<script> window.location = './admin/pages/otp.php';</script>";
+                    echo "<script> window.location = 'otp.php';</script>";
                 }else if ($pass == $row['password']) {
                     $_SESSION['id'] = $row['id'];
                     $_SESSION['username'] = $user;
@@ -205,14 +205,14 @@ require_once '../../vendor/autoload.php';
                     $_SESSION['Ma_nv'] = $row1['Ma_nv'];
                     $sql = " UPDATE nhan_vien SET login = 1 WHERE username='$user'";
                     mysqli_query($conn, $sql);
-                    echo "<script> window.location = './admin/pages/home.php';</script>";
+                    echo "<script> window.location = 'home.php';</script>";
                 }     
                 else if($pass == $row1['pass'] && $row1['status'] == 0){
                     echo '<script>alert("Tài khoản của bạn đã bị khóa")</script>';
-                    echo "<script> window.location = './admin/pages/index.php';</script>";
+                    echo "<script> window.location = 'index.php';</script>";
                 }else {
                     echo '<script>alert("Sai mật khẩu")</script>';
-                    echo "<script> window.location = './admin/pages/index.php';</script>";
+                    echo "<script> window.location = 'index.php';</script>";
                 }
 
             } else {
@@ -221,14 +221,13 @@ require_once '../../vendor/autoload.php';
 
             }
         }
-       
         ?>
     </form>
 
 </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js'></script>
     <script src='http://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js?r=182'></script>
-    <script src="./admin/Public/admin/dist/js/login_check.js"></script>
+    <script src="../Public/admin/dist/js/login_check.js"></script>
 </body>
 
 </html>
