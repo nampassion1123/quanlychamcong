@@ -137,7 +137,7 @@ require_once '../../vendor/autoload.php';
         </div> -->
         <?php
 
-        if (isset($_POST['btn'])) {
+        if (isset($_POST['.btn'])) {
             $user = $_POST['user'];
             $pass = $_POST['pass'];
             global $conn;
