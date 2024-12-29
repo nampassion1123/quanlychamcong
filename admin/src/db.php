@@ -9,4 +9,6 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 if (!$conn) {
     die("Không kết nối :" . mysqli_connect_error());
     exit();
+}else{
+    echo "Kết nối thành công";
 }
