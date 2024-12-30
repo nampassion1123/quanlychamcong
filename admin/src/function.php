@@ -1,4 +1,4 @@
-<?php require_once 'db.php';
+<?php require_once "./admin/src/db.php";
 
 function bophan()
 {
