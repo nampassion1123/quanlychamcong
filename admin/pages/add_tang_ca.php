@@ -1,6 +1,6 @@
 <?php require 'table.html' ?>
 <?php require 'header.php' ?>
-<?php require_once "./admin/src/db.php"; global conn;
+<?php require_once "./admin/src/db.php";
 $email = $_SESSION['username'];
 $sqlpb = "SELECT ID FROM bo_phan WHERE email = '$email'";
 $resultbp = $conn->query($sqlpb);

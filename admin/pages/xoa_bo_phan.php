@@ -1,5 +1,5 @@
 <?php
-require_once "./admin/src/db.php"; global conn;
+require_once "./admin/src/db.php";
 $id=$_GET['x'];
 $sql="DELETE from bo_phan where ID ='$id'";
 $ketqua=mysqli_query($conn, $sql) or die("Chuyển các nhân viên của bộ phận này sang phòng ban khác trước khi xóa!");

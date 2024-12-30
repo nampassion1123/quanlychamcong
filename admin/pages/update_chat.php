@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "./admin/src/db.php"; global conn;
+require_once "./admin/src/db.php";
 
 
 // Nhận dữ liệu từ yêu cầu POST

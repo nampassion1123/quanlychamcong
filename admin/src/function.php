@@ -33,7 +33,8 @@ function nghiviec()
 }
 function search()
 {
-  global conn;
+  global $conn;
+
   //Truy vấn dữ liệu
   if (isset($_GET['search']) && !empty($_GET['search'])) {
     $key = $_GET['search'];

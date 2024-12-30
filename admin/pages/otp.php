@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "./admin/src/db.php"; global conn;
+require_once "./admin/src/db.php";
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $input_otp = $_POST['otp'];
     

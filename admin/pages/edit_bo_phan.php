@@ -1,5 +1,5 @@
 <?php require 'header.php' ?>
-<?php require_once "./admin/src/db.php"; global conn;
+<?php require_once "./admin/src/db.php";
 $id = $_GET['ID'];
 
 $sql = "SELECT * FROM bo_phan WHERE ID = '$id'"; 

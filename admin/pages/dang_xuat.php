@@ -1,5 +1,5 @@
 <?php 
-require_once "./admin/src/db.php"; global conn;
+require_once "./admin/src/db.php";
 	session_start();
 	unset($_SESSION['username']);
 	if(isset($_SESSION['Ma_nv'])){

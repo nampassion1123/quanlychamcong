@@ -1,6 +1,5 @@
 <?php
-require_once "./admin/src/db.php"; global conn;
-global conn;
+require_once "./admin/src/db.php";
 $id=$_GET['x'];
 $sql="delete from tang_ca where id='$id'";
 $ketqua=mysqli_query($conn, $sql) or die("Câu truy vấn sai!");

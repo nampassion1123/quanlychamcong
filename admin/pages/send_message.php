@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "./admin/src/db.php"; global conn;
+require_once "./admin/src/db.php";
 
 $user_id = $_SESSION['id'];
 $assigned_to = $_POST['assigned_to'];

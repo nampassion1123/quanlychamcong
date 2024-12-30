@@ -1,5 +1,5 @@
 <?php
-require_once "./admin/src/db.php"; global conn;
+require_once "./admin/src/db.php";
 $manv=$_GET['x'];
 $sql1="DELETE from phan_ca_lam where Ma_nv='$manv'";
 mysqli_query($conn, $sql1) or die("Đã xảy ra lỗi!");

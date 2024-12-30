@@ -1,6 +1,6 @@
 <?php require 'table.html' ?>
 <?php require 'header.php' ?>
-<?php require_once "./admin/src/db.php"; global conn;
+<?php require_once "./admin/src/db.php";
 $user_id = $_SESSION['id'];
 $sqlpb = "SELECT nv.ID_bophan 
 FROM nhan_vien nv

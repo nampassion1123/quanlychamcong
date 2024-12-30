@@ -1,5 +1,5 @@
 <?php
-require_once "./admin/src/db.php"; global conn;
+require_once "./admin/src/db.php";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $ma_nv = $_POST['Ma_nv'];

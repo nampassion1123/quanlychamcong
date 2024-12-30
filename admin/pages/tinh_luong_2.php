@@ -2,7 +2,7 @@
 // $manv = $_GET['Ma_nv'];
 // $date = $_GET['Ngay'];
 $today = date("Y/m/d");
-require_once "./admin/src/db.php"; global conn;
+require_once "./admin/src/db.php";
 $sql = " select * from cham_cong where Ngay='$today'";
 $result = mysqli_query($conn, $sql);
 $count = mysqli_num_rows($result);

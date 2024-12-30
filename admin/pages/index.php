@@ -2,7 +2,7 @@
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-require_once "./admin/src/db.php"; global conn;
+require_once "./admin/src/db.php";
 // Tải autoload.php
 require_once '../../vendor/autoload.php';
 ?>
@@ -136,6 +136,7 @@ require_once '../../vendor/autoload.php';
             <a href="dangky.php"><i class="glyphicon glyphicon-minus"></i>Signup</a>
         </div> -->
         <?php
+        global $conn;
         if (isset($_POST['btn'])) {
             $user = $_POST['user'];
             $pass = $_POST['pass'];

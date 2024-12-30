@@ -1,5 +1,5 @@
 <?php
-require_once "./admin/src/db.php"; global conn;
+require_once "./admin/src/db.php";
 if($_GET['x']){
      $id=$_GET['x'];
 }else{

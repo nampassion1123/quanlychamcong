@@ -28,7 +28,7 @@
     <tbody>
     <?php
     /*Kết nối máy chủ MySQL. Máy chủ có cài đặt mặc định (user là 'root' và không có mật khẩu)*/
-    require_once "./admin/src/db.php"; global conn;
+    require_once "./admin/src/db.php";
  
     // Kểm tra kết nối
     if ($conn === false) {

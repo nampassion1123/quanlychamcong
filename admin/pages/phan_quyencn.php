@@ -1,5 +1,5 @@
 <?php require 'header.php'; ?>
-<?php require_once "./admin/src/db.php"; global conn;
+<?php require_once "./admin/src/db.php";
 
 // Lấy tất cả người dùng từ bảng users
 $sql = "SELECT * FROM users";

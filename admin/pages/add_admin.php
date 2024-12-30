@@ -1,6 +1,6 @@
 <?php require 'header.php' ?>
 <?php require 'table.html' ?>
-<?php require_once "./admin/src/db.php"; global conn;
+<?php require_once "./admin/src/db.php"; 
  ?>
 <div class="content-wrapper">
     <div class="content-header">
@@ -62,6 +62,7 @@
                         
                     </div>
                     <?php
+                    global $conn;
                     if (isset($_POST['btn'])) {
                         $username = $_POST['username'];
                         $password = $_POST['password'];
